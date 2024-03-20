@@ -1,0 +1,28 @@
+<script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v5.0.0/dist/aframe-extras.min.js"></script>
+
+<a-scene>
+
+  <a-assets>
+    <!-- Model by Lada.Repina from https://sketchfab.com/models/041ff593cec544c19a2a37cc38c06194 -->
+    <a-asset-item id="hamster-animated-gltf" src="https://cdn.rawgit.com/michaelnebeling/src/master/hamster_walk/scene.gltf"></a-asset-item>
+
+    <!-- Model by pepedrago from https://sketchfab.com/models/0d655721128444b9954a25558f1c3be0 -->
+    <a-asset-item id="phaser-gltf" src="https://cdn.rawgit.com/michaelnebeling/src/master/phaser/scene.gltf"></a-asset-item>
+
+    <!-- Model by Boris.M from https://sketchfab.com/models/03424fd66c6c4516a24194e4065b6b2b -->
+    <a-asset-item id="yoda-gltf" src="https://cdn.rawgit.com/michaelnebeling/src/master/sgp24_yoda_master/scene.gltf"></a-asset-item>
+
+    <!-- Big Vegas from Adobe Mixamo: https://www.mixamo.com/#/?page=1&type=Character -->
+    <a-asset-item id="super_elvis-dae" src="https://cdn.rawgit.com/michaelnebeling/src/master/super_elvis/Flying.dae"></a-asset-item>
+  </a-assets>
+
+  <a-entity gltf-model="#hamster-animated-gltf" position="-6 0 -10" scale="0.01 0.01 0.01" animation-mixer></a-entity>
+
+  <a-entity gltf-model="#phaser-gltf" position="-1 0 -10" rotation="0 -90 0" scale="0.01 0.01 0.01">
+  </a-entity>
+
+  <a-entity collada-model="#super_elvis-dae" position="5 0 -10"></a-entity>
+
+  <a-sky color="white"></a-sky>
+  
+</a-scene>
